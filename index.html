@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FED21S - CeSoir</title>
+
+    <style>
+        body {
+                padding: 0px;
+                margin: 0px;
+
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+        .container {
+            display: flex;
+        
+            background-image: url("brickwall.jpg");
+            background-attachment: fixed;
+        }
+
+        .box {
+            width: 960px; 
+            
+            margin: 50px auto 50px auto;
+            background-image: url("woodwall.jpg");       
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top:50px;
+        }
+
+        .navigation {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+
+        .header {
+            min-height: 300px;
+            text-align: center;
+            padding-top:100px;
+           
+            text-align: center;
+        }
+
+        a {
+            color:black;
+            text-decoration: none;
+        }
+
+        ul {
+            padding: 10px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        li {
+            list-style: none;
+            padding-right: 10px;
+            
+        }
+
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .image {
+            height:500px;
+            width: 660px;
+            background-size: cover;
+        }
+        
+        .text {
+            height:400px;
+            width: 260px;
+            text-align: center;
+            background-color:#f1f1f1;
+            padding: 100px 20px 0px 20px;
+            background-image: url("text_bg.png");
+        }
+
+        .full-image {
+            height:450px;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .text h3 {
+            margin-bottom: 0px;
+        }
+
+        hr {
+            width: 20px;
+            background-color:#ff3399;
+            height: 5px;
+            border: 0px;
+        }
+
+        h1, h2, h4 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer {
+            background-image: url("footer.png"); 
+            
+            padding: 20px;
+            padding-top: 100px;
+           
+        }
+
+        .footerContent {
+           text-align: center;
+           max-width: 250px;
+        }
+
+        .footerSocial {
+           text-align: right;
+        }
+
+        @media all and (max-width: 960px) {
+                .text, .image {
+                    flex: 100% ;
+                }
+
+            .text { order: 1; }
+            .image { order: 2; }
+
+            .box {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            .navigation {
+                display: none;
+            }
+        }
+
+        </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            
+            <div class="menu">
+                <div class="navLogo">
+                    <img src="cesoir_logo.png" style="width: 200px;">
+                    <hr>
+                </div>
+                    <ul class="navigation">
+                            <li><a href="#">Hem</a></li>
+                            <li><a href="#">Vår meny</a></li>
+                            <li><a href="#">Filosofi</a></li>
+                            <li><a href="#">Hitta till oss</a></li>
+                    </ul> 
+            </div>
+
+            <div class="header">
+                   <img src="elk_head.png" style="width: 150px;">
+                    <hr>
+            </div>
+
+            <div class="content">       
+                        <div class="row">
+                            <div class="text">
+                                <h3>OUR STORY</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, dolor arcu mi, rutrum nam sociis. Tempus magna suspendisse. Lorem ipsum dolor sit amet, dolor arcu mi, rutrum nam sociis. Tempus magna suspendisse.</p>
+                            </div>
+                            <div class="image" style="background-image: url('bartender.jpeg');"></div>
+                        </div>
+                        <div class="row">
+                            <div class="image" style="background-image: url('asparagus.jpeg');"></div>
+                            <div class="text">
+                                    <h3>FRESH FARE</h3>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, dolor arcu mi, rutrum nam sociis. Tempus magna suspendisse. Lorem ipsum dolor sit amet, dolor arcu mi, rutrum nam sociis. Tempus magna suspendisse.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text">
+                                    <h3>LOCAL DISTILLATION</h3>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, dolor arcu mi, rutrum nam sociis. Tempus magna suspendisse. Lorem ipsum dolor sit amet, dolor arcu mi, rutrum nam sociis. Tempus magna suspendisse.</p>
+                            </div>
+                            <div class="image" style="background-image: url('bar.jpeg');"></div>
+                        </div>
+                        <div class="row">
+                            <div class="full-image" style="background-image: url('egg.jpeg');"></div>
+                        </div>       
+            </div>
+            
+            <div class="footer">
+                <div class="footerContent">
+                    <img src="cesoir_logo.png" style="width: 200px;">
+                    <hr>
+                    <p> 
+                        Gatuadressen 23<br />
+                        417 30 Göteborg
+                    </p>
+                    <p>
+                        E: info@cesoir.com<br />
+                        M: 031 123 123 45
+                    </p>
+                </div>
+                <div class="footerSocial">
+                    <img src="social.png" style="width: 100px;"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
